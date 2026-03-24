@@ -99,10 +99,10 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
-                url("images.jpg/indexpage.png");
+    background-image: url("images.jpg/indexpage.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 200px 20px;
