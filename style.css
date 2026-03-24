@@ -98,16 +98,6 @@ nav a:hover {
     color: #38bdf8;
 }
 
-.hero {
-    background-image: url("images.jpg/indexpage.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    color: white;
-    text-align: center;
-    padding: 200px 20px;
-}
 
 .hero h1 {
     font-size: 48px;
@@ -119,7 +109,19 @@ nav a:hover {
     max-width: 700px;
     margin: 0 auto 30px;
 }
+.hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+                url("images.jpg/indexpage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .hero h1,
 .hero p {
     color: white;
