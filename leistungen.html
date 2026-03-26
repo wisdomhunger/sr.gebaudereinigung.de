@@ -293,17 +293,35 @@ document.querySelectorAll(".side-menu-nav a").forEach(link => {
     <body>
 
 <header class="site-header">
-    <div class="container header-bar">
-        <a href="index.html" class="brand-link">
-            <img src="images.jpg/logo.png" alt="Logo" class="logo-img">
-            <span class="logo-text">SR Gebäudereinigung</span>
-        </a>
+    <div class="container header-wrapper">
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="header-top">
+            <a href="index.html" class="brand-link">
+                <img src="images.jpg/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">SR Gebäudereinigung</span>
+            </a>
+
+            <div class="social-icons">
+                <a href="https://instagram.com/sr.gebaudereinigung" target="_blank">
+                    <img src="images.jpg/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank">
+                    <img src="images.jpg/facebook.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="#gebaeudereinigung">Gebäudereinigung</a></li>
+                <li><a href="#bueroreinigung">Büroreinigung</a></li>
+                <li><a href="#praxisreinigung">Praxisreinigung</a></li>
+                <li><a href="#weitere-leistungen">Weitere Leistungen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
     </div>
 </header>
 
