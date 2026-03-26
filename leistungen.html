@@ -266,37 +266,50 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
+<header class="site-header">
+    <div class="container header-bar">
+        <a href="index.html" class="brand-link">
+            <img src="images.jpg/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">SR Gebäudereinigung</span>
+        </a>
 
-        <div class="top-bar">
-            <div class="branding">
-                <a href="index.html" style="display:flex; align-items:center; gap:14px; text-decoration:none;">
-                    <img src="images.jpg/logo.png" alt="Logo" class="logo-img">
-                    <span class="logo-text">SR Gebäudereinigung</span>
-                </a>
-            </div>
-
-            <div class="social-icons">
-                <a href="https://instagram.com/sr.gebaudereinigung" target="_blank">
-                    <img src="images.jpg/insta.png" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank">
-                    <img src="images.jpg/facebook.png" alt="Facebook">
-                </a>
-            </div>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="leistungen.html">Leistungen</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-
+        <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <span class="side-menu-title">Menü</span>
+        <button class="menu-close" id="menuClose" aria-label="Menü schließen">×</button>
+    </div>
+
+    <nav class="side-menu-nav">
+        <a href="index.html">Startseite</a>
+        <a href="index.html#services">Leistungen</a>
+        <a href="leistungen.html#gebaeudereinigung">Gebäudereinigung</a>
+        <a href="leistungen.html#bueroreinigung">Büroreinigung</a>
+        <a href="leistungen.html#praxisreinigung">Praxisreinigung</a>
+        <a href="leistungen.html#weitere-leistungen">Weitere Leistungen</a>
+        <a href="index.html#why-us">Warum wir</a>
+        <a href="index.html#about">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <div class="side-menu-socials">
+        <a href="https://instagram.com/sr.gebaudereinigung" target="_blank">
+            <img src="images.jpg/insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank">
+            <img src="images.jpg/facebook.png" alt="Facebook">
+        </a>
+    </div>
+</aside>
 
 <section class="services-hero">
     <div class="container">
