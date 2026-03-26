@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - SR Gebäudereinigung</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <section class="contact-page">
+    <div class="contact-wrapper">
+        <h1>Kontaktformular</h1>
+        <p>Füllen Sie das Formular aus und wir melden uns schnell bei Ihnen.</p>
 
-<div class="contact-wrapper">
-
-<h1>Kontaktformular</h1>
-
-<p>Füllen Sie das Formular aus und wir melden uns schnell bei Ihnen.</p>
-
-<form class="contact-form">
-
-<input type="text" placeholder="Ihr Name">
-
-<input type="email" placeholder="Ihre Email">
-
-<input type="tel" placeholder="Ihre Telefonnummer">
-
-<textarea placeholder="Ihre Nachricht"></textarea>
-
-<button type="submit">Nachricht senden</button>
-
-</form>
-
-</div>
-
+        <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Ihr Name" required>
+            <input type="email" name="reply_to" placeholder="E-Mail" required>
+            <input type="text" name="phone" placeholder="Ihre Telefonnummer">
+            <textarea name="message" placeholder="Nachricht" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </div>
 </section>
-</body>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("Ph-l4_5bhIym_-BgF");
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_pr4ef8h",
+        "template_m9ztn4b",
+        this
+    ).then(function() {
+        alert("Nachricht gesendet!");
+        document.getElementById("contact-form").reset();
+    }, function(error) {
+        alert("Fehler, versuchen Sie es später erneut.");
+        console.log(error);
+    });
+});
+</script>
+
+</body>
 </html>
