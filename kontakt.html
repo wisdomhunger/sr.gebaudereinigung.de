@@ -5,207 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - SR Gebäudereinigung</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .contact-page {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-            background:
-                linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
-                url("images.jpg/arbeit.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .contact-wrapper {
-            width: 100%;
-            max-width: 560px;
-            background: rgba(255, 255, 255, 0.97);
-            padding: 38px 32px;
-            border-radius: 18px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
-            animation: fadeUp 0.7s ease;
-        }
-
-        .contact-badge {
-            display: inline-block;
-            padding: 8px 14px;
-            border-radius: 999px;
-            background: #e0f2fe;
-            color: #0369a1;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.4px;
-            margin-bottom: 16px;
-        }
-
-        .contact-wrapper h1 {
-            font-size: 34px;
-            color: #0f172a;
-            margin-bottom: 12px;
-        }
-
-        .contact-wrapper p {
-            color: #475569;
-            font-size: 16px;
-            margin-bottom: 26px;
-            line-height: 1.6;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px 16px;
-            border: 1px solid #cbd5e1;
-            border-radius: 12px;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            background: #fff;
-            transition: 0.25s ease;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            outline: none;
-            border-color: #38bdf8;
-            box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
-        }
-
-        .contact-form textarea {
-            min-height: 140px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            border: none;
-            border-radius: 12px;
-            padding: 15px 20px;
-            background: linear-gradient(135deg, #0ea5e9, #0284c7);
-            color: white;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
-            box-shadow: 0 12px 24px rgba(2, 132, 199, 0.25);
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 16px 30px rgba(2, 132, 199, 0.3);
-        }
-
-        .submit-btn:active {
-            transform: scale(0.98);
-        }
-
-        .submit-btn.loading {
-            opacity: 0.85;
-            cursor: wait;
-        }
-
-        .btn-content {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .spinner {
-            width: 18px;
-            height: 18px;
-            border: 2px solid rgba(255,255,255,0.35);
-            border-top-color: white;
-            border-radius: 50%;
-            display: none;
-            animation: spin 0.8s linear infinite;
-        }
-
-        .submit-btn.loading .spinner {
-            display: inline-block;
-        }
-
-        .submit-btn.loading .btn-text {
-            opacity: 0.95;
-        }
-
-        .contact-note {
-            margin-top: 14px;
-            font-size: 13px;
-            color: #64748b;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(22px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 640px) {
-            .contact-wrapper {
-                padding: 28px 20px;
-            }
-
-            .contact-wrapper h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
+    <link rel="icon" type="image/png" href="images.jpg/logo.png">
 </head>
-<body>
+<body class="page-shell">
 
-<section class="contact-page">
-    <div class="contact-wrapper">
-        <div class="contact-badge">SR Gebäudereinigung</div>
-        <h1>Kontaktformular</h1>
-        <p>
-            Senden Sie uns Ihre Anfrage schnell und unkompliziert.
-            Wir melden uns so bald wie möglich bei Ihnen zurück.
-        </p>
+<header class="site-header">
+    <div class="container header-wrapper">
+        <div class="header-top">
+            <a href="index.html" class="brand-link">
+                <img src="images.jpg/logo.png" alt="SR Gebäudereinigung Logo" class="logo-img">
+                <span class="logo-text">SR Gebäudereinigung</span>
+            </a>
 
-        <form id="contact-form" class="contact-form">
-            <input type="text" name="from_name" placeholder="Ihr Name" required>
-            <input type="email" name="reply_to" placeholder="E-Mail-Adresse" required>
-            <input type="text" name="phone" placeholder="Ihre Telefonnummer">
-            <textarea name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+            <div class="social-icons">
+                <a href="https://instagram.com/sr.gebaudereinigung" target="_blank" rel="noopener noreferrer">
+                    <img src="images.jpg/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank" rel="noopener noreferrer">
+                    <img src="images.jpg/facebook.png" alt="Facebook">
+                </a>
+            </div>
 
-            <button type="submit" class="submit-btn" id="submit-btn">
-                <span class="btn-content">
-                    <span class="spinner"></span>
-                    <span class="btn-text">Anfrage senden</span>
-                </span>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-        </form>
+        </div>
 
-        <div class="contact-note">
-            Mit dem Absenden erklären Sie sich damit einverstanden, dass wir Ihre Angaben
-            zur Bearbeitung Ihrer Anfrage verwenden.
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="index.html#why-us">Warum wir</a></li>
+                <li><a href="index.html#about">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<aside class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menü</span>
+        <button class="mobile-menu-close" id="menuClose" aria-label="Menü schließen">×</button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+        <a href="index.html">Startseite</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="index.html#why-us">Warum wir</a>
+        <a href="index.html#about">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+
+    <div class="mobile-menu-socials">
+        <a href="https://instagram.com/sr.gebaudereinigung" target="_blank" rel="noopener noreferrer">
+            <img src="images.jpg/insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank" rel="noopener noreferrer">
+            <img src="images.jpg/facebook.png" alt="Facebook">
+        </a>
+    </div>
+</aside>
+
+<main class="page-main">
+    <section class="contact-hero">
+        <div class="container reveal">
+            <h1>Kontaktieren Sie uns</h1>
+            <p>
+                Senden Sie uns Ihre Anfrage schnell und unkompliziert.
+                Wir melden uns so bald wie möglich bei Ihnen zurück.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <h2>Direkter Kontakt</h2>
+                    <p>
+                        Sie möchten ein unverbindliches Angebot oder haben Fragen zu unseren Leistungen?
+                        Kontaktieren Sie uns direkt per E-Mail oder Telefon.
+                    </p>
+
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <strong>Telefon:</strong><br>
+                            <a href="tel:+49123456789">+49 123 456789</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>E-Mail:</strong><br>
+                            <a href="mailto:info@sr-gebaeudereinigung.de">info@sr-gebaeudereinigung.de</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Standort:</strong><br>
+                            <span>München & Umgebung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal">
+                    <h2>Kontaktformular</h2>
+
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" name="from_name" placeholder="Ihr Name" required>
+                        <input type="email" name="reply_to" placeholder="E-Mail-Adresse" required>
+                        <input type="text" name="phone" placeholder="Ihre Telefonnummer">
+                        <textarea name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <span class="btn-content">
+                                <span class="spinner"></span>
+                                <span class="btn-text">Anfrage senden</span>
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="contact-note">
+                        Mit dem Absenden erklären Sie sich damit einverstanden, dass wir Ihre Angaben
+                        zur Bearbeitung Ihrer Anfrage verwenden. Weitere Informationen finden Sie in unserer
+                        <a href="datenschutz.html">Datenschutzerklärung</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="map-card reveal">
+                <h2>Standort / Karte</h2>
+                <iframe
+                    class="map-embed"
+                    src="https://www.google.com/maps?q=München&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Standortkarte München">
+                </iframe>
+                <p class="map-hint">
+                    Dies ist ein Platzhalter für Ihre Google-Maps-Einbindung. Sie können später
+                    die genaue Firmenadresse einsetzen.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-left">
+            <h3>SR Gebäudereinigung</h3>
+            <p>Professionelle Reinigung in München & Umgebung</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="kontakt.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+
+        <div class="footer-contact">
+            <p><strong>Email:</strong> <a href="mailto:info@sr-gebaeudereinigung.de">info@sr-gebaeudereinigung.de</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+49123456789">+49 123 456789</a></p>
         </div>
     </div>
-</section>
+
+    <div class="footer-bottom">
+        <p>© 2026 SR Gebäudereinigung</p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
 <script>
 emailjs.init("Ph-l4_5bhIym_-BgF");
 
@@ -235,31 +212,43 @@ form.addEventListener("submit", function(e) {
         window.location.href = "bestaetigung-fehler.html";
     });
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const menuClose = document.getElementById("menuClose");
+const mobileMenu = document.getElementById("mobileMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+function openMenu() {
+    mobileMenu.classList.add("active");
+    menuOverlay.classList.add("active");
+    document.body.classList.add("menu-open");
+}
+
+function closeMenu() {
+    mobileMenu.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    document.body.classList.remove("menu-open");
+}
+
+if (menuToggle) menuToggle.addEventListener("click", openMenu);
+if (menuClose) menuClose.addEventListener("click", closeMenu);
+if (menuOverlay) menuOverlay.addEventListener("click", closeMenu);
+
+document.querySelectorAll(".mobile-menu-nav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+});
+
+const reveals = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.12 });
+
+reveals.forEach(el => observer.observe(el));
 </script>
-<footer class="footer">
-    <div class="container footer-content">
 
-        <div class="footer-left">
-            <h3>SR Gebäudereinigung</h3>
-            <p>Professionelle Reinigung in München & Umgebung</p>
-        </div>
-
-        <div class="footer-links">
-            <a href="kontakt.html">Kontakt</a>
-            <a href="#datenschutz">Datenschutz</a>
-            <a href="#">Impressum</a>
-        </div>
-
-        <div class="footer-contact">
-            <p><strong>Email:</strong> info@sr-gebaeudereinigung.de</p>
-            <p><strong>Telefon:</strong> +49 123 456789</p>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 SR Gebäudereinigung</p>
-    </div>
-</footer>
 </body>
 </html>
