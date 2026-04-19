@@ -283,8 +283,12 @@ a {
 /* ===== HERO ===== */
 
 .hero {
-    background: linear-gradient(rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.74)),
-                url("images.jpg/indexpage.png");
+    background: linear-gradient(
+        rgba(15, 23, 42, 0.85),
+        rgba(2, 132, 199, 0.55)
+    ),
+    url("images/indexpage.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
