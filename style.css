@@ -1403,3 +1403,45 @@ a {
 .btn:hover {
     background: linear-gradient(135deg, #0284c7, #0369a1);
 }
+
+/* ===== HERO + HEADER FIX ===== */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(15, 23, 42, 0.6),
+        rgba(15, 23, 42, 0.6)
+    ),
+    url("images/indexpage.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 160px 20px 120px;
+}
+
+.hero h1,
+.hero p {
+    color: white;
+    text-shadow: 0 6px 25px rgba(0,0,0,0.5);
+}
+
+.main-nav a {
+    color: white;
+}
