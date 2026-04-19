@@ -1445,3 +1445,24 @@ a {
 .main-nav a {
     color: white;
 }
+/* HEADER SCROLL EFEKT */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.site-header.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* HERO OFFSET */
+.hero {
+    padding-top: 160px;
+}
