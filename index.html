@@ -14,16 +14,13 @@
 
         <div class="header-top">
 
-            <!-- PRAZNO LIJEVO -->
             <div class="header-spacer"></div>
 
-            <!-- LOGO CENTAR -->
             <a href="index.html" class="brand-link center">
                 <img src="images.jpg/logo.png" alt="Logo" class="logo-img">
                 <span class="logo-text">SR Gebäudereinigung</span>
             </a>
 
-            <!-- IKONICE DESNO -->
             <div class="social-icons right">
                 <a href="https://instagram.com/sr.gebaudereinigung" target="_blank">
                     <img src="images.jpg/insta.png" alt="Instagram">
@@ -47,6 +44,23 @@
 
     </div>
 </header>
+
+<!-- ostatak tvoje stranice ide ovdje (hero, sekcije itd.) -->
+
+<script>
+window.addEventListener("scroll", function() {
+    const header = document.querySelector(".site-header");
+
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
+
+</body>
+</html>
 
 <section id="home" class="hero">
     <div class="container">
