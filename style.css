@@ -1346,6 +1346,8 @@ a {
         padding: 22px 18px;
     }
 }
-.hero .container {
+.hero .container,
+.hero h1,
+.hero p {
     text-align: center;
 }
