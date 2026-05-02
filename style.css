@@ -1387,3 +1387,25 @@ a {
     display: flex;
     gap: 12px;
 }
+.header-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* CENTAR — brutalno precizan */
+.brand-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* DESNO */
+.social-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+}
