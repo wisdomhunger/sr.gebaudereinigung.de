@@ -1350,3 +1350,26 @@ a {
 .hero p {
     text-align: center;
 }
+/* HEADER FIX */
+.site-header {
+    position: relative;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.brand-link {
+    grid-column: 2;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-icons {
+    grid-column: 3;
+    justify-self: end;
+}
