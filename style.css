@@ -1373,3 +1373,17 @@ a {
     grid-column: 3;
     justify-self: end;
 }
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.brand-link {
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+}
