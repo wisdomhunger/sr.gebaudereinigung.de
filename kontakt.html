@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - SR Gebäudereinigung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images.jpg/logo.png">
+</head>
+<body class="page-shell">
+
+<header class="site-header">
+    <div class="container header-wrapper">
+        <div class="header-top">
+            <a href="index.html" class="brand-link">
+                <img src="images.jpg/logo.png" alt="SR Gebäudereinigung Logo" class="logo-img">
+                <span class="logo-text">SR Gebäudereinigung</span>
+            </a>
+
+            <div class="social-icons">
+                <a href="https://instagram.com/sr.gebaudereinigung" target="_blank" rel="noopener noreferrer">
+                    <img src="images.jpg/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank" rel="noopener noreferrer">
+                    <img src="images.jpg/facebook.png" alt="Facebook">
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="index.html#why-us">Warum wir</a></li>
+                <li><a href="index.html#about">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<aside class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menü</span>
+        <button class="mobile-menu-close" id="menuClose" aria-label="Menü schließen">×</button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+        <a href="index.html">Startseite</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="index.html#why-us">Warum wir</a>
+        <a href="index.html#about">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+
+    <div class="mobile-menu-socials">
+        <a href="https://instagram.com/sr.gebaudereinigung" target="_blank" rel="noopener noreferrer">
+            <img src="images.jpg/insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61580575067153" target="_blank" rel="noopener noreferrer">
+            <img src="images.jpg/facebook.png" alt="Facebook">
+        </a>
+    </div>
+</aside>
+
+<main class="page-main">
+    <section class="contact-hero">
+        <div class="container reveal">
+            <h1>Kontaktieren Sie uns</h1>
+            <p>
+                Senden Sie uns Ihre Anfrage schnell und unkompliziert.
+                Wir melden uns so bald wie möglich bei Ihnen zurück.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <h2>Direkter Kontakt</h2>
+                    <p>
+                        Sie möchten ein unverbindliches Angebot oder haben Fragen zu unseren Leistungen?
+                        Kontaktieren Sie uns direkt per E-Mail oder Telefon.
+                    </p>
+
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <strong>Telefon:</strong><br>
+                            <a href="tel:+49 163 7351932">+49 163 7351932</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>E-Mail:</strong><br>
+                            <a href="mailto:info@srgebaudereinigung.de">info@srgebaudereinigung.de</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Standort:</strong><br>
+                            <span>München & Umgebung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal">
+                    <h2>Kontaktformular</h2>
+
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" name="from_name" placeholder="Ihr Name" required>
+                        <input type="email" name="reply_to" placeholder="E-Mail-Adresse" required>
+                        <input type="text" name="phone" placeholder="Ihre Telefonnummer">
+                        <textarea name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <span class="btn-content">
+                                <span class="spinner"></span>
+                                <span class="btn-text">Anfrage senden</span>
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="contact-note">
+                        Mit dem Absenden erklären Sie sich damit einverstanden, dass wir Ihre Angaben
+                        zur Bearbeitung Ihrer Anfrage verwenden. Weitere Informationen finden Sie in unserer
+                        <a href="datenschutz.html">Datenschutzerklärung</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="map-card reveal">
+                <h2>Standort / Karte</h2>
+                <iframe
+                    class="map-embed"
+                    src="https://www.google.com/maps?q=München&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Standortkarte München">
+                </iframe>
+                <p class="map-hint">
+                    Dies ist ein Platzhalter für Ihre Google-Maps-Einbindung. Sie können später
+                    die genaue Firmenadresse einsetzen.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-left">
+            <h3>SR Gebäudereinigung</h3>
+            <p>Professionelle Reinigung in München & Umgebung</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="kontakt.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+
+        <div class="footer-contact">
+            <p><strong>Email:</strong> <a href="mailto:info@srgebaudereinigung.de">info@srgebaudereinigung.de</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+49 163 7351932">+49 163 7351932</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SR Gebäudereinigung</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init("Ph-l4_5bhIym_-BgF");
+
+const form = document.getElementById("contact-form");
+const submitBtn = document.getElementById("submit-btn");
+const btnText = submitBtn.querySelector(".btn-text");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    submitBtn.classList.add("loading");
+    submitBtn.disabled = true;
+    btnText.textContent = "Wird gesendet...";
+
+    emailjs.sendForm(
+        "service_oscoetn",
+        "template_m9ztn4b",
+        form
+    ).then(function() {
+        form.reset();
+        window.location.href = "bestaetigung.html";
+    }).catch(function(error) {
+        submitBtn.classList.remove("loading");
+        submitBtn.disabled = false;
+        btnText.textContent = "Anfrage senden";
+        console.error("EmailJS Fehler:", error);
+        window.location.href = "bestaetigung-fehler.html";
+    });
+});
+
+const menuToggle = document.getElementById("menuToggle");
+const menuClose = document.getElementById("menuClose");
+const mobileMenu = document.getElementById("mobileMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+function openMenu() {
+    mobileMenu.classList.add("active");
+    menuOverlay.classList.add("active");
+    document.body.classList.add("menu-open");
+}
+
+function closeMenu() {
+    mobileMenu.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    document.body.classList.remove("menu-open");
+}
+
+if (menuToggle) menuToggle.addEventListener("click", openMenu);
+if (menuClose) menuClose.addEventListener("click", closeMenu);
+if (menuOverlay) menuOverlay.addEventListener("click", closeMenu);
+
+document.querySelectorAll(".mobile-menu-nav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+});
+
+const reveals = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.12 });
+
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
